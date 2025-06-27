@@ -3,7 +3,7 @@ import requests
 import json
 
 # Configure the API URL
-API_URL = "https://feedback-scorecard-academia.cloudjiffy.net/"  
+API_URL = "http://scenario-fetching-api-academia.cloudjiffy.net/"  
 
 def main():
     st.title("Scenario Management System")
@@ -15,7 +15,7 @@ def main():
         col1, col2 = st.columns(2)
         with col1:
             name = st.text_input("Scenario Name")
-            type = st.selectbox("Scenario Type", ["sales", "customer"], placeholder="Select Type", index=None)  
+            type = st.selectbox("Scenario Type", ["interview"], placeholder="Select Type", index=None)  
             persona_name = st.text_input("Persona Name")
             
 
