@@ -23,7 +23,7 @@ def main():
         with col2:
             image_url = st.text_input("Image URL")
             voice_id = st.selectbox("Voice ID", list(voice_dict.keys()), placeholder="Select Voice ID", index=None)
-            difficulty_level = st.selectbox("Difficulty Level", ["easy", "medium", "hard"], placeholder="Select Level", index=None)
+            difficulty_level = st.selectbox("Difficulty Level", ["beginner", "intermediate", "advanced"], placeholder="Select Level", index=None)
 
         # Persona Description
         persona = st.text_area("AI Persona Description")
